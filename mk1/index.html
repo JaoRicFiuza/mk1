@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com Barra Lateral à Direita</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: green;
+            padding: 15px;
+            text-align: center;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            padding: 15px;
+        }
+
+        aside {
+            width: 25%;
+            background-color: #f2f2f2;
+            padding: 15px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 15px;
+            background-color: #e2e2e2;
+            margin-right: 15px;
+        }
+
+        .component {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: green;
+            text-align: center;
+            padding: 15px;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="component">Logo</div>
+        <div class="component">Menu de Navegação</div>
+        <button><a href="https://www.google.com.br/?hl=pt-BR">Buscar</a></button>
+    </header>
+
+    <main>
+        <div class="content">
+            <button><a href="https://www.instagram.com/fiuza_ja0?igsh=MWZncWU3MHF3M2IyeQ%3D%3D&utm_source=qr">Meu blog minha Vida</a></button>
+            <button><a href="https://www.folha.uol.com.br/">Principais notícias</a></button>
+            <div class="component">
+                <form action="#">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <aside>
+            <div class="component">Sobre nós: nós somos um time de dev's e queremos levar o máximo de informações para o público.</div>
+            <button><a href="https://replit.com/join/pwpisfckvw-joaoricfiuza">Links rápidos</a></button>
+            <button><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">YouTube</a></button>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="component">Atividade DIW © 23/08/2024</div>
+        <div class="component">Foi difícil más consegui</div>        
+        <div class="component">Termos de Uso</div>
+    </footer>
+
+</body>
+</html>
