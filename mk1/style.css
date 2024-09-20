@@ -1,4 +1,219 @@
-html {
-  height: 100%;
-  width: 100%;
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Centraliza o conteúdo principal */
+.header, .home-section, .products-section, .cart-section, .contact-section, .footer {
+    width: 100%;
+    max-width: 1500px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 10px;
+}
+
+.header {
+    background-color: #223;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-section {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.products-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    width: 200px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #223;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cart-section, .contact-section {
+    text-align: center;
+}
+
+footer {
+    background-color: #223;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Estilização do container de produtos */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+/* Estilização de cada item de produto */
+.product-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Garantir que a imagem tenha um tamanho consistente */
+.product-item img {
+    width: 100px;
+    height: auto;
+}
+
+/* Estilização dos botões */
+.btn {
+    padding: 10px 20px;
+    background-color: #223;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    align-self: stretch; /* Para garantir que o botão ocupe a largura total do item */
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #223;
+}
+
+/* Certificar que os botões fiquem no mesmo lugar */
+.product-item h3 {
+    margin: 10px 0;
+}
+
+.product-item p {
+    margin: 5px 0;
+}
+
+/* Estilização do container de produtos */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+/* Estilização de cada item de produto */
+.product-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px; /* Largura dos produtos */
+    height: 400px; /* Altura fixa para manter todos alinhados */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Garantir que a imagem tenha um tamanho consistente */
+.product-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain; /* Para ajustar as imagens no espaço definido */
+}
+
+/* Estilização do título e descrição */
+.product-item h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    min-height: 40px; /* Altura mínima para garantir alinhamento dos títulos */
+}
+
+.product-item p {
+    font-size: 1.1em;
+    margin: 5px 0;
+    min-height: 30px; /* Altura mínima para as descrições/preços */
+}
+
+/* Estilização dos botões */
+.btn {
+    padding: 10px 20px;
+    background-color: #223;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    align-self: stretch; /* Para garantir que o botão ocupe a largura total do item */
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #223;
 }
