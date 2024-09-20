@@ -19,7 +19,7 @@ body {
     width: 100%;
     max-width: 1500px; /* Limita a largura máxima */
     margin: 0 auto; /* Centraliza horizontalmente */
-    padding: 10px;
+    padding: 100px;
 }
 
 .header {
